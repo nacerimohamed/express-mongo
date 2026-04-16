@@ -1,54 +1,53 @@
-
-# 🛒 TP CRUD EJS - Gestion des Produits
+# 🛒 TP CRUD EJS - Product Management
 
 ## 📌 Description
 
-Ce projet est une application web بسيطة pour **Gestion des produits** باستخدام:
+This project is a simple web application for **product management** built using:
 
 * Node.js
 * Express.js
 * MongoDB
 * EJS (Template Engine)
 
-كاتدير العمليات الأساسية:
+It allows performing basic CRUD operations:
 
-* ➕ Ajouter un produit (CREATE)
-* 📋 Afficher les produits (READ)
-* ✏️ Modifier un produit (UPDATE)
-* ❌ Supprimer un produit (DELETE)
+* ➕ Add a product (CREATE)
+* 📋 View products (READ)
+* ✏️ Update a product (UPDATE)
+* ❌ Delete a product (DELETE)
 
 ---
 
 ## ⚙️ Installation
 
-### 1️⃣ Cloner le projet
+### 1️⃣ Clone the project
 
 ```bash
 git clone <repo-url>
 cd tp-crud-ejs
 ```
 
-### 2️⃣ Installer les dépendances
+### 2️⃣ Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Lancer MongoDB
+### 3️⃣ Start MongoDB
 
-تأكد أن MongoDB خدام:
+Make sure MongoDB is running:
 
 ```bash
 mongod
 ```
 
-### 4️⃣ Lancer le serveur
+### 4️⃣ Run the server
 
 ```bash
 node server.js
 ```
 
-📍 L’application sera disponible sur :
+📍 The application will be available at:
 
 ```
 http://localhost:3000
@@ -56,7 +55,7 @@ http://localhost:3000
 
 ---
 
-## 📁 Structure du projet
+## 📁 Project Structure
 
 ```
 tp-crud-ejs/
@@ -75,7 +74,7 @@ tp-crud-ejs/
 
 ---
 
-## 🧠 Modèle (Product)
+## 🧠 Model (Product)
 
 ```js
 const mongoose = require("mongoose");
@@ -91,30 +90,30 @@ module.exports = mongoose.model("Product", ProductSchema);
 
 ---
 
-## 🚀 Fonctionnalités
+## 🚀 Features
 
-### 🔍 READ (Afficher)
+### 🔍 READ (Display)
 
-* Route : `/`
-* Affiche tous les produits dans un tableau
+* Route: `/`
+* Displays all products in a table
 
-### ➕ CREATE (Ajouter)
+### ➕ CREATE (Add)
 
-* GET `/add` → afficher formulaire
-* POST `/add` → ajouter produit
+* GET `/add` → show form
+* POST `/add` → add product
 
-### ✏️ UPDATE (Modifier)
+### ✏️ UPDATE (Edit)
 
-* GET `/edit/:id` → formulaire modification
-* PUT `/edit/:id` → update produit
+* GET `/edit/:id` → edit form
+* PUT `/edit/:id` → update product
 
-### ❌ DELETE (Supprimer)
+### ❌ DELETE (Remove)
 
-* DELETE `/delete/:id` → supprimer produit
+* DELETE `/delete/:id` → delete product
 
 ---
 
-## 🛠️ Technologies utilisées
+## 🛠️ Technologies Used
 
 * Node.js
 * Express.js
@@ -125,11 +124,11 @@ module.exports = mongoose.model("Product", ProductSchema);
 
 ---
 
-## 📌 Remarques
+## 📌 Notes
 
-* MongoDB doit être actif avant de lancer le projet
-* Vérifier que le port **27017** est disponible
-* URL de connexion :
+* MongoDB must be running before starting the project
+* Make sure port **27017** is available
+* Connection URL:
 
 ```
 mongodb://127.0.0.1:27017/tpcrud
@@ -137,19 +136,19 @@ mongodb://127.0.0.1:27017/tpcrud
 
 ---
 
-## 👨‍💻 Auteur
+## 👨‍💻 Author
 
-* Projet réalisé dans le cadre de la formation **Développement Digital Full Stack**
+* Project created as part of **Full Stack Web Development training**
 
 ---
 
 ## ⭐ Bonus
 
-يمكنك تطوير المشروع بإضافة:
+You can improve this project by adding:
 
-* Bootstrap للتصميم 🎨
-* Validation des formulaires ✅
-* Authentification 🔐
-* API REST 🌐
+* Bootstrap for styling 🎨
+* Form validation ✅
+* Authentication system 🔐
+* REST API 🌐
 
 ---
